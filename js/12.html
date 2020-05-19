@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>批量事件绑定</title>
+    <style>
+      li {
+        margin: 10px 0 0 40px;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ol>
+        <li>春</li>
+        <li>夏</li>
+        <li>秋</li>
+        <li>冬</li>
+      </ol>
+    </div>
+    <script>
+      var ol = document.getElementsByTagName("ol")[0];
+      ol.onclick = function (event) {
+        console.log(event.target.innerHTML);
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .child {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+      .parent {
+        width: 200px;
+        height: 200px;
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+    <script>
+      var parent = document.getElementsByClassName("parent")[0];
+      var child = document.getElementsByClassName("child")[0];
+      parent.addEventListener("click", function () {
+        console.log("parent");
+      });
+      child.addEventListener("click", function () {
+        console.log("child");
+      });
+    </script>
+  </body>
+</html>

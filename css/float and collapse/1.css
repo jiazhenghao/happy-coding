@@ -1,0 +1,18 @@
+#children1 {
+  float: left;
+  width: 200px;
+  height: 100px;
+  background-color: red;
+}
+/* #parent {
+  /* overflow: hidden; 
+  overflow: auto;
+} */
+
+/* .clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+} */

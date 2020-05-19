@@ -20,22 +20,29 @@
 
 // func3();
 
-
 // console.log("12345");
 // setTimeout(function(){
 //     console.log('上山打老虎');
 // }, 1500);
 // console.log("6789");
 
-
 console.log("12345");
-setTimeout(function(){
-    console.log('上山打老虎');
+setTimeout(function () {
+  console.log("上山打老虎");
 }, 0);
 function sleep(str) {
-    return new Promise(function(resolve, reject) {
-        resolve(str);
-    });
+  return new Promise(function (resolve, reject) {
+    resolve(str);
+  });
 }
-sleep("我也是个异步呀").then( (data)=> console.log(data));
+sleep("我也是个异步呀").then((data) => console.log(data));
 console.log("6789");
+
+// console.log("one");
+// setTimeout(function () {
+//   console.log("two");
+// }, 0);
+// Promise.resolve().then(function () {
+//   console.log("three");
+// });
+// console.log("four");
