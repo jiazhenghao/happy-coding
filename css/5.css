@@ -1,4 +1,9 @@
 div {
-    width: 1500px;
-    background-color: pink
+  width: 1500px;
+  background-color: pink;
+}
+
+.pink {
+  width: 1500px;
+  background-color: pink;
 }

@@ -24,12 +24,17 @@
     <script>
       var parent = document.getElementsByClassName("parent")[0];
       var child = document.getElementsByClassName("child")[0];
-      parent.addEventListener("click", function () {
-        console.log("parent");
-      });
       child.addEventListener("click", function () {
         console.log("child");
       });
+      parent.addEventListener(
+        "click",
+        function () {
+          // event.target =
+          console.log("parent");
+        },
+        { capture: true }
+      );
     </script>
   </body>
 </html>

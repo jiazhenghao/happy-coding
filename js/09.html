@@ -4,17 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="test1.js"></script>
+    <script src="test2.js"></script>
   </head>
   <body>
     <script>
       (function () {
-        var a = (b = 3);
+        // var a = (b = 3);
+        var b = 3;
+        var a = b;
         console.log(a); // 3
         console.log(b); // 3
       })();
 
-      console.log("a defined? " + (typeof a !== "undefined"));
-      console.log("b defined? " + (typeof b !== "undefined"));
+      console.log("a defined? " + (typeof a !== "undefined")); // false
+      console.log("b defined? " + (typeof b !== "undefined")); // true
+      // if (isLoggedIn) {
+      //   console.log("送你100话费");
+      // }
     </script>
   </body>
 </html>

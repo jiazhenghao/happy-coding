@@ -6,3 +6,5 @@
 function add1(x, y) {
   return x + y;
 }
+
+add(2)(5); // 7
